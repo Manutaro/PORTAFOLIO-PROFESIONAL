@@ -5,50 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portafolio profesional de Manuel Rodríguez González - Full Stack Developer Jr. especializado en Java, Spring Boot, JavaScript, Node.js y MySQL.">
-    <meta name="theme-color" content="#0f172a">
-    <title>Manuel Rodríguez González | Full Stack Developer Jr.</title>
+        content="Portafolio profesional de Manuel Rodríguez González - Full Stack Developer Jr. especializado en Java, Spring Boot, JavaScript y Accesibilidad Web (WCAG 2.2 AAA / ARIA).">
+    <meta name="theme-color" content="#121316">
+    <title>Manuel Rodríguez González | Portafolio Profesional</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Enlace de salto rápido para accesibilidad por teclado (WCAG 2.4.1) -->
+    <!-- Mi enlace de salto rápido para usuarios que navegan con teclado (WCAG 2.4.1) -->
     <a href="#contenido-principal" class="enlace-salto">
         Saltar al contenido principal
     </a>
 
-    <!-- Encabezado Principal / Sección de Presentación -->
+    <!-- Encabezado Principal (Hero) -->
     <header class="encabezado-principal" role="banner">
         <div class="contenedor">
-            <div class="contenido-encabezado">
-                <h1 class="titulo-principal">
-                    Hola, soy Manuel Rodríguez González <span class="emoji-alien-videojuego"
-                        aria-hidden="true">👾</span>
-                </h1>
-                <p class="subtitulo-rol">Full Stack Developer Jr.</p>
-                <p class="descripcion-perfil">
-                    Desarrollador de software enfocado en crear sitios web funcionales y eficientes, con
-                    experiencia en Java, JavaScript, Spring Boot, Node.js y MySQL. Apasionado por la programación y la
-                    resolución de problemas a través de soluciones tecnológicas innovadoras.
-                </p>
+            <div class="contenido-encabezado-flex">
+                <div class="bloque-texto-hero">
+                    <h1 class="titulo-principal">
+                        Hola, soy Manuel Rodríguez González <span class="emoji-extraterrestre-videojuego"
+                            aria-hidden="true">👾</span>
+                    </h1>
+                    <p class="subtitulo-rol">Full Stack Developer Jr.</p>
 
-                <nav class="acciones-principal" aria-label="Acciones principales de perfil">
-                    <a href="#seccion-proyectos" class="boton boton-principal">
-                        Ver proyectos
-                    </a>
-                    <a href="https://github.com/Manutaro" target="_blank" rel="noopener noreferrer"
-                        class="boton boton-secundario"
-                        aria-label="Ir al perfil de GitHub de Manuel Rodríguez González (se abre en una nueva pestaña)">
-                        GitHub
-                    </a>
-                </nav>
+                    <p class="descripcion-perfil">
+                        Desarrollador de software enfocado en crear aplicaciones web funcionales, robustas y
+                        <strong>universalmente accesibles (WCAG 2.2 AAA)</strong>. Especializado en backend con Java
+                        &amp;
+                        Spring Boot y frontend interactivo con JavaScript, garantizando que el software pueda ser
+                        utilizado
+                        por cualquier persona, sin importar sus capacidades.
+                    </p>
+
+                    <!-- Insignia de compromiso con la inclusión digital -->
+                    <div class="insignia-accesibilidad" aria-label="Estatus de accesibilidad del sitio">
+                        <span>Portafolio desarrollado pensando en la inclusión digital y WCAG 2.2 AAA</span>
+                    </div>
+
+                    <!-- Botones de navegación principales -->
+                    <nav class="acciones-principal" aria-label="Acciones principales de perfil">
+                        <a href="#seccion-proyectos" class="boton boton-principal">
+                            Ver proyectos
+                        </a>
+                        <a href="mailto:mrg.dev.mx@gmail.com" class="boton boton-secundario"
+                            aria-label="Enviar un correo electrónico directamente a Manuel Rodríguez González">
+                            ✉️ Enviar Correo
+                        </a>
+                    </nav>
+
+                    <!-- Mis redes sociales con etiquetas accesibles e iconos integrados -->
+                    <div class="redes-sociales-hero" aria-label="Mis redes sociales y contacto profesional">
+                        <a href="https://github.com/Manutaro" target="_blank" rel="noopener noreferrer"
+                            class="enlace-red-social"
+                            aria-label="Ir al perfil de GitHub de Manuel Rodríguez González (se abre en una nueva pestaña)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/manuel-rodriguez-gonzalez-dev/" target="_blank"
+                            rel="noopener noreferrer" class="enlace-red-social"
+                            aria-label="Ir al perfil profesional de LinkedIn de Manuel Rodríguez González (se abre en una nueva pestaña)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fotografía de perfil en estilo Origami -->
+                <div class="contenedor-avatar-hero">
+                    <img src="./imagenes/manuel-origami.jpg"
+                        alt="Retrato estilizado de Manuel Rodríguez González en arte papercraft u origami geométrico"
+                        class="imagen-avatar-hero" width="320" height="420" loading="eager">
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Contenido Principal de la Página -->
     <main id="contenido-principal" tabindex="-1">
+
+        <!-- Sección de Filosofía y Pilares de Accesibilidad -->
+        <section class="seccion-filosofia" aria-labelledby="titulo-filosofia">
+            <div class="contenedor">
+                <h2 id="titulo-filosofia" class="titulo-seccion">Desarrollo Web Inclusivo por Diseño</h2>
+
+                <div class="grilla-pilares">
+                    <article class="tarjeta-pilar">
+                        <h3 class="titulo-pilar">Navegación por Teclado Completa</h3>
+                        <p class="texto-pilar">
+                            Diseño cada flujo para ser 100% operable sin ratón, con anillos de enfoque visibles
+                            (<code>:focus-visible</code>) y enlaces de salto rápido para lectores de pantalla.
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-pilar">
+                        <h3 class="titulo-pilar">Semántica HTML &amp; Patrones ARIA</h3>
+                        <p class="texto-pilar">
+                            Priorizo la semántica nativa de HTML5 y aplico atributos ARIA únicamente donde la
+                            interactividad compleja lo requiere, evitando barreras de código inaccesibles.
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-pilar">
+                        <h3 class="titulo-pilar">Contraste AAA &amp; Movimiento Reducido</h3>
+                        <p class="texto-pilar">
+                            Garantizo relaciones de contraste de color superiores a 7:1 y respeto las preferencias
+                            del sistema del usuario como <code>prefers-reduced-motion</code>.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
         <!-- Sección de Habilidades Técnicas -->
         <section class="seccion-habilidades" aria-labelledby="titulo-habilidades">
@@ -60,9 +135,9 @@
                     <li class="etiqueta-habilidad">JavaScript</li>
                     <li class="etiqueta-habilidad">Node.js</li>
                     <li class="etiqueta-habilidad">MySQL</li>
-                    <li class="etiqueta-habilidad">Git</li>
-                    <li class="etiqueta-habilidad">GitHub</li>
+                    <li class="etiqueta-habilidad">Git &amp; GitHub</li>
                     <li class="etiqueta-habilidad">REST APIs</li>
+                    <li class="etiqueta-habilidad">Accesibilidad Web (WCAG 2.2 / ARIA)</li>
                     <li class="etiqueta-habilidad">Desarrollo Web (HTML5/CSS3)</li>
                 </ul>
             </div>
@@ -73,13 +148,32 @@
             <div class="contenedor">
                 <h2 id="titulo-proyectos" class="titulo-seccion">Proyectos Destacados</h2>
 
-                <div class="grilla-proyectos">
+                <!-- Filtros interactivos por categorías -->
+                <nav class="contenedor-filtros" aria-label="Filtrar proyectos por categoría">
+                    <div role="tablist" class="lista-filtros" aria-orientation="horizontal">
+                        <button role="tab" aria-selected="true" aria-controls="grilla-proyectos" id="tab-todos"
+                            class="boton-filtro activo" data-filtro="todos">
+                            Todos
+                        </button>
+                        <button role="tab" aria-selected="false" aria-controls="grilla-proyectos" id="tab-fullstack"
+                            class="boton-filtro" data-filtro="fullstack">
+                            Proyectos Personales (Full Stack)
+                        </button>
+                        <button role="tab" aria-selected="false" aria-controls="grilla-proyectos" id="tab-Java"
+                            class="boton-filtro" data-filtro="java">
+                            Proyectos Java, Javascript
+                        </button>
+                    </div>
+                </nav>
 
-                    <!-- Tarjeta de Proyecto 1: E-commerce Sketch&Coffee CDMX -->
-                    <article class="tarjeta-proyecto" aria-labelledby="titulo-proyecto-1">
+                <div id="grilla-proyectos" class="grilla-proyectos" role="region" aria-live="polite">
+
+                    <!-- Proyecto 1: E-commerce Sketch&Coffee-->
+                    <article class="tarjeta-proyecto" data-categoria="fullstack a11y"
+                        aria-labelledby="titulo-proyecto-1">
                         <div class="contenedor-imagen">
                             <img src="./imagenes/Sketch&Coffe.jpeg"
-                                alt="Imagen del logotipo de la plataforma e-commerce Sketch&Coffee"
+                                alt="Logotipo de la cafetería de especialidad y e-commerce Sketch and Coffee CDMX"
                                 class="imagen-proyecto" loading="lazy">
                         </div>
 
@@ -88,51 +182,49 @@
                                 E-commerce Sketch&amp;Coffee CDMX
                             </h3>
 
-                            <section class="detalle-proyecto" aria-label="Problema que resuelve">
-                                <h4 class="etiqueta-detalle">¿Qué problema resuelve?</h4>
+                            <section class="detalle-proyecto" aria-label="Impacto y solución">
+                                <h4 class="etiqueta-detalle">Impacto y Solución de Negocio</h4>
                                 <p class="texto-detalle">
-                                    Digitalizó los pedidos y ventas en línea de una cafetería en la CDMX,
-                                    permitiendo explorar el menú de especialidad, gestionar el carrito de compras y
-                                    procesar órdenes en tiempo real. Implementé accesibilidad ARIA para mejorar la
-                                    experiencia de usuarios con discapacidades, asegurando que puedan navegar y realizar
-                                    compras de manera efectiva.
+                                    Digitalizó los pedidos y ventas en línea de una cafetería en la CDMX.
+                                    Implementé un carrito interactivo accesible mediante lectores de pantalla
+                                    (NVDA/JAWS),
+                                    anuncios dinámicos mediante <code>aria-live="polite"</code> al agregar productos y
+                                    alto contraste de color optimizado para baja visión.
                                 </p>
                             </section>
 
                             <section class="detalle-proyecto" aria-label="Tecnologías utilizadas">
-                                <h4 class="etiqueta-detalle">Tecnologías utilizadas</h4>
+                                <h4 class="etiqueta-detalle">Tecnologías Utilizadas</h4>
                                 <ul class="lista-tecnologias" role="list">
                                     <li class="etiqueta-tecnologia">Java</li>
-                                    <li class="etiqueta-tecnologia">JavaScript</li>
                                     <li class="etiqueta-tecnologia">Spring Boot</li>
-                                    <li class="etiqueta-tecnologia">HTML5</li>
-                                    <li class="etiqueta-tecnologia">CSS3</li>
+                                    <li class="etiqueta-tecnologia">JavaScript</li>
                                     <li class="etiqueta-tecnologia">MySQL</li>
+                                    <li class="etiqueta-tecnologia">ARIA</li>
                                     <li class="etiqueta-tecnologia">Git</li>
-                                
                                 </ul>
                             </section>
 
                             <div class="acciones-proyecto">
                                 <a href="https://sketchandcoffee.mx/" target="_blank" rel="noopener noreferrer"
                                     class="boton boton-tarjeta-principal"
-                                    aria-label="Ver demo interactiva de la plataforma e-commerce Sketch and Coffee CDMX (se abre en una nueva pestaña)">
+                                    aria-label="Ver demo interactiva de Sketch and Coffee CDMX (se abre en una nueva pestaña)">
                                     Ver Demo
                                 </a>
                                 <a href="https://github.com/Zeth-DG/sketch-and-coffee" target="_blank"
                                     rel="noopener noreferrer" class="boton boton-tarjeta-secundaria"
-                                    aria-label="Ver código fuente en GitHub del e-commerce Sketch and Coffee (se abre en una nueva pestaña)">
+                                    aria-label="Ver código fuente en GitHub de Sketch and Coffee (se abre en una nueva pestaña)">
                                     Código en GitHub
                                 </a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Tarjeta de Proyecto 2: Landing Page (Tlalli) Tierra Deportiva -->
-                    <article class="tarjeta-proyecto" aria-labelledby="titulo-proyecto-2">
+                    <!-- Proyecto 2: Landing Page Tlalli Tierra Deportiva -->
+                    <article class="tarjeta-proyecto" data-categoria="a11y" aria-labelledby="titulo-proyecto-2">
                         <div class="contenedor-imagen">
                             <img src="./imagenes/Tlalli.jpg"
-                                alt="Vista previa responsiva de la Landing Page promocional moderna y optimizada"
+                                alt="Vista previa responsiva de la Landing Page promocional Tlalli Tierra Deportiva"
                                 class="imagen-proyecto" loading="lazy">
                         </div>
 
@@ -141,22 +233,21 @@
                                 Landing Page (Tlalli) Tierra Deportiva
                             </h3>
 
-                            <section class="detalle-proyecto" aria-label="Problema que resuelve">
-                                <h4 class="etiqueta-detalle">¿Qué problema resuelve?</h4>
+                            <section class="detalle-proyecto" aria-label="Impacto y solución">
+                                <h4 class="etiqueta-detalle">Impacto y Solución de Negocio</h4>
                                 <p class="texto-detalle">
-                                    Aumenta la conversión de visitantes y la presencia digital mediante una interfaz
-                                    atractiva, 100% adaptable a dispositivos móviles, optimizada para SEO y con tiempos
-                                    de carga ultrarrápidos. Permite captar clientes potenciales de manera efectiva y
-                                    mejorar
-                                    la experiencia del usuario, facilitando la navegación y el acceso a información
-                                    clave.
+                                    Sitio promocional de una tienda deportiva enfocado en la conversión de clientes y
+                                    rendimiento web.
+                                    Mantuvimos interactividad y animaciones accesibles, optimizando la experiencia de
+                                    usuario.
+                                    Construido con una jerarquía de encabezados semántica impecable.
                                 </p>
                             </section>
 
                             <section class="detalle-proyecto" aria-label="Tecnologías utilizadas">
-                                <h4 class="etiqueta-detalle">Tecnologías utilizadas</h4>
+                                <h4 class="etiqueta-detalle">Tecnologías Utilizadas</h4>
                                 <ul class="lista-tecnologias" role="list">
-                                    <li class="etiqueta-tecnologia">HTML5</li>
+                                    <li class="etiqueta-tecnologia">HTML5 Semántico</li>
                                     <li class="etiqueta-tecnologia">CSS3</li>
                                     <li class="etiqueta-tecnologia">JavaScript</li>
                                     <li class="etiqueta-tecnologia">Git</li>
@@ -166,12 +257,12 @@
                             <div class="acciones-proyecto">
                                 <a href="#" target="_blank" rel="noopener noreferrer"
                                     class="boton boton-tarjeta-principal"
-                                    aria-label="Ver demo interactiva de la Landing Page Promocional (se abre en una nueva pestaña)">
+                                    aria-label="Ver demo interactiva de la Landing Page Tlalli (se abre en una nueva pestaña)">
                                     Ver Demo
                                 </a>
                                 <a href="https://github.com/Manutaro/Hackathon-1-Landing-page-interactiva"
                                     target="_blank" rel="noopener noreferrer" class="boton boton-tarjeta-secundaria"
-                                    aria-label="Ver código fuente en GitHub de la Landing Page Promocional (se abre en una nueva pestaña)">
+                                    aria-label="Ver código fuente en GitHub de la Landing Page Tlalli (se abre en una nueva pestaña)">
                                     Código en GitHub
                                 </a>
                             </div>
@@ -184,10 +275,45 @@
 
     </main>
 
-    <!-- Pie de página -->
+    <!--pie de página -->
     <footer class="pie-pagina" role="contentinfo">
         <div class="contenedor contenido-pie">
             <p>&copy; 2026 Manuel Rodríguez González — Full Stack Developer Jr.</p>
+
+            <!-- Lista de mis accesos directos de contacto en el pie de página -->
+            <ul class="lista-redes-pie" aria-label="Enlaces de contacto directo en el pie de página">
+                <li>
+                    <a href="https://github.com/Manutaro" target="_blank" rel="noopener noreferrer"
+                        aria-label="Ir al perfil de GitHub (se abre en una nueva pestaña)">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/manuel-rodriguez-gonzalez-dev/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Ir al perfil de LinkedIn (se abre en una nueva pestaña)">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:mrg.dev.mx@gmail.com" aria-label="Enviar un correo electrónico directo a Manuel">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        <span>Correo</span>
+                    </a>
+                </li>
+            </ul>
+
             <a href="#contenido-principal" class="enlace-volver-arriba"
                 aria-label="Volver al contenido principal de la página">
                 Volver arriba ↑
