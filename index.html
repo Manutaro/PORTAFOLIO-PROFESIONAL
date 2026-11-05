@@ -14,11 +14,33 @@
 
 <body>
 
+
+    <!-- Barra de Navegación Fija (Sticky Header & Menú de Navegación) -->
+    <header class="barra-navegacion-fija" role="banner">
+        <div class="contenedor contenido-navegacion">
+            <a href="#contenido-principal" class="logo-navegacion" aria-label="Ir al inicio del portafolio">
+                MRG<span class="punto-acento">.dev</span>
+            </a>
+            <nav aria-label="Navegación principal de secciones">
+                <ul class="lista-navegacion" role="list">
+                    <li><a href="#titulo-filosofia" class="enlace-nav">Filosofía</a></li>
+                    <li><a href="#titulo-habilidades" class="enlace-nav">Habilidades</a></li>
+                    <li><a href="#seccion-proyectos" class="enlace-nav">Proyectos</a></li>
+                    <li><a href="#seccion-certificaciones" class="enlace-nav">Certificaciones</a></li>
+                    <li><a href="#seccion-contacto" class="enlace-nav">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
     <!-- Mi enlace de salto rápido para usuarios que navegan con teclado (WCAG 2.4.1) -->
     <a href="#contenido-principal" class="enlace-salto">
         Saltar al contenido principal
     </a>
 
+    <!------------------------------------------------------------------------------------------------------------------------>
     <!-- Encabezado Principal (Hero) -->
     <header class="encabezado-principal" role="banner">
         <div class="contenedor">
@@ -92,39 +114,45 @@
     <!-- Contenido Principal de la Página -->
     <main id="contenido-principal" tabindex="-1">
 
+        <!------------------------------------------------------------------------------------------------------------------------------>
         <!-- Sección de Filosofía y Pilares de Accesibilidad -->
         <section class="seccion-filosofia" aria-labelledby="titulo-filosofia">
             <div class="contenedor">
-                <h2 id="titulo-filosofia" class="titulo-seccion">Desarrollo Web Inclusivo por Diseño</h2>
+                <h2 id="titulo-filosofia" class="titulo-seccion">Mi Filosofia</h2>
 
                 <div class="grilla-pilares">
                     <article class="tarjeta-pilar">
-                        <h3 class="titulo-pilar">Navegación por Teclado Completa</h3>
+                        <h3 class="titulo-pilar">Mi compromiso: Software para todos</h3>
                         <p class="texto-pilar">
-                            Diseño cada flujo para ser 100% operable sin ratón, con anillos de enfoque visibles
-                            (<code>:focus-visible</code>) y enlaces de salto rápido para lectores de pantalla.
+                            Creo firmemente que la tecnología debe incluir, no excluir. Diseñar con accesibilidad (WCAG
+                            2.2 AAA) no es un requisito extra para mí; es la base con la que construyo cada interfaz
+                            para que cualquier persona pueda usarla sin barreras.
                         </p>
                     </article>
 
                     <article class="tarjeta-pilar">
-                        <h3 class="titulo-pilar">Semántica HTML &amp; Patrones ARIA</h3>
+                        <h3 class="titulo-pilar">Lógica robusta en el backend</h3>
                         <p class="texto-pilar">
-                            Priorizo la semántica nativa de HTML5 y aplico atributos ARIA únicamente donde la
-                            interactividad compleja lo requiere, evitando barreras de código inaccesibles.
+                            Disfruto resolver problemas complejos estructurando código limpio y eficiente con Java y
+                            Spring Boot. Me apasiona crear bases de datos sólidas y APIs bien organizadas que soporten
+                            aplicaciones reales.
                         </p>
                     </article>
 
                     <article class="tarjeta-pilar">
-                        <h3 class="titulo-pilar">Contraste AAA &amp; Movimiento Reducido</h3>
+                        <h3 class="titulo-pilar">Atención al detalle y experiencia</h3>
                         <p class="texto-pilar">
-                            Garantizo relaciones de contraste de color superiores a 7:1 y respeto las preferencias
-                            del sistema del usuario como <code>prefers-reduced-motion</code>.
+                            Cuido minuciosamente cada interacción visual y táctil. Me enfoco en escribir código ligero,
+                            navegable por teclado y con tiempos de carga rápidos, logrando que navegar por el sitio sea
+                            intuitivo y gratificante.
                         </p>
                     </article>
                 </div>
             </div>
         </section>
 
+
+        <!------------------------------------------------------------------------------------------------------------------------------>
         <!-- Sección de Habilidades Técnicas -->
         <section class="seccion-habilidades" aria-labelledby="titulo-habilidades">
             <div class="contenedor">
@@ -143,6 +171,8 @@
             </div>
         </section>
 
+
+        <!------------------------------------------------------------------------------------------------------------------->
         <!-- Sección de Proyectos Destacados -->
         <section id="seccion-proyectos" class="seccion-proyectos" aria-labelledby="titulo-proyectos">
             <div class="contenedor">
@@ -156,7 +186,7 @@
                             Todos
                         </button>
                         <button role="tab" aria-selected="false" aria-controls="grilla-proyectos" id="tab-fullstack"
-                            class="boton-filtro" data-filtro="fullstack">
+                            class="boton-filtro" data-filtro="personales">
                             Proyectos Personales (Full Stack)
                         </button>
                         <button role="tab" aria-selected="false" aria-controls="grilla-proyectos" id="tab-Java"
@@ -169,8 +199,7 @@
                 <div id="grilla-proyectos" class="grilla-proyectos" role="region" aria-live="polite">
 
                     <!-- Proyecto 1: E-commerce Sketch&Coffee-->
-                    <article class="tarjeta-proyecto" data-categoria="fullstack a11y"
-                        aria-labelledby="titulo-proyecto-1">
+                    <article class="tarjeta-proyecto" data-categoria="java" aria-labelledby="titulo-proyecto-1">
                         <div class="contenedor-imagen">
                             <img src="./imagenes/Sketch&Coffe.jpeg"
                                 alt="Logotipo de la cafetería de especialidad y e-commerce Sketch and Coffee CDMX"
@@ -221,7 +250,7 @@
                     </article>
 
                     <!-- Proyecto 2: Landing Page Tlalli Tierra Deportiva -->
-                    <article class="tarjeta-proyecto" data-categoria="a11y" aria-labelledby="titulo-proyecto-2">
+                    <article class="tarjeta-proyecto" data-categoria="java" aria-labelledby="titulo-proyecto-2">
                         <div class="contenedor-imagen">
                             <img src="./imagenes/Tlalli.jpg"
                                 alt="Vista previa responsiva de la Landing Page promocional Tlalli Tierra Deportiva"
@@ -255,8 +284,8 @@
                             </section>
 
                             <div class="acciones-proyecto">
-                                <a href="#" target="_blank" rel="noopener noreferrer"
-                                    class="boton boton-tarjeta-principal"
+                                <a href="https://github.com/Manutaro/Hackathon-1-Landing-page-interactiva"
+                                    target="_blank" rel="noopener noreferrer" class="boton boton-tarjeta-principal"
                                     aria-label="Ver demo interactiva de la Landing Page Tlalli (se abre en una nueva pestaña)">
                                     Ver Demo
                                 </a>
@@ -269,12 +298,253 @@
                         </div>
                     </article>
 
+                    <!--Proyecto 3 Sistema de Gestion de Agenda Telefonica-->
+                    <article class="tarjeta-proyecto" data-categoria="java" aria-labelledby="titulo-proyecto-3">
+                        <div class="contenedor-imagen">
+                            <img src="./imagenes/2.png"
+                                alt="Imagen de nuestra interfaz en consola de nuestro Sistema de Agenda Telefonica"
+                                class="imagen-proyecto" loading="lazy">
+                        </div>
+
+                        <div class="cuerpo-proyecto">
+                            <h3 id="titulo-proyecto-3" class="titulo-proyecto">
+                                Sistema de Gestion de Agenda Telefonica
+                            </h3>
+
+                            <section class="detalle-proyecto" aria-label="Impacto y solución">
+                                <h4 class="etiqueta-detalle">Impacto y Solución de Negocio</h4>
+                                <p class="texto-detalle">
+                                    Participé en un hackathon donde desarrolle un sistema completo de gestión de
+                                    contactos, escalando desde una aplicación de consola en Java hasta una arquitectura
+                                    web interactiva basada en un servidor HTTP nativo.
+                                </p>
+                            </section>
+
+                            <section class="detalle-proyecto" aria-label="Tecnologías utilizadas">
+                                <h4 class="etiqueta-detalle">Tecnologías Utilizadas</h4>
+                                <ul class="lista-tecnologias" role="list">
+                                    <li class="etiqueta-tecnologia">Java</li>
+                                    <li class="etiqueta-tecnologia">HTML</li>
+                                    <li class="etiqueta-tecnologia">JavaScript</li>
+                                    <li class="etiqueta-tecnologia">CSS</li>
+                                    <li class="etiqueta-tecnologia">GitHub</li>
+                                    <li class="etiqueta-tecnologia">Git</li>
+                                </ul>
+                            </section>
+
+                            <div class="acciones-proyecto">
+                                <a href="https://github.com/albertob2003/hackaton2" target="_blank"
+                                    rel="noopener noreferrer" class="boton boton-tarjeta-principal"
+                                    aria-label="Ver codigo de en la plataforma GitHub (se abre en una nueva pestaña)">
+                                    Ver Demo
+                                </a>
+                                <a href="https://github.com/albertob2003/hackaton2" target="_blank"
+                                    rel="noopener noreferrer" class="boton boton-tarjeta-secundaria"
+                                    aria-label="Ver código fuente en GitHub del Sistema de Gestion de Agenda Telefonica (se abre en una nueva pestaña)">
+                                    Código en GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                    <!-- Proyecto 4: Landing Page Promociones Sketch&Coffe-->
+                    <article class="tarjeta-proyecto" data-categoria="personales" aria-labelledby="titulo-proyecto-4">
+                        <div class="contenedor-imagen">
+                            <img src="./imagenes/landingsketch.jpeg"
+                                alt="Imagen completa de una vista general de la landing page de promociones de la cafeteria Sketch&Coffe"
+                                class="imagen-proyecto" loading="lazy">
+                        </div>
+
+                        <div class="cuerpo-proyecto">
+                            <h3 id="titulo-proyecto-4" class="titulo-proyecto">
+                                Landing Page Sketch&amp;Coffee CDMX
+                            </h3>
+
+                            <section class="detalle-proyecto" aria-label="Impacto y solución">
+                                <h4 class="etiqueta-detalle">Impacto y Solución de Negocio</h4>
+                                <p class="texto-detalle">
+                                    Desarrollé una landing page para una cafetería que integra un motor de promociones
+                                    dinámico basado en Programación Orientada a Objetos (POO) y soporte multimedia.
+                                    Además, diseñé una tarjeta de lealtad digital totalmente responsiva con CSS Grid,
+                                    garantizando un rendimiento óptimo y accesibilidad WCAG AA.
+                                </p>
+                            </section>
+
+                            <section class="detalle-proyecto" aria-label="Tecnologías utilizadas">
+                                <h4 class="etiqueta-detalle">Tecnologías Utilizadas</h4>
+                                <ul class="lista-tecnologias" role="list">
+                                    <li class="etiqueta-tecnologia">JavaScript</li>
+                                    <li class="etiqueta-tecnologia">HTML</li>
+                                    <li class="etiqueta-tecnologia">CSS</li>
+                                    <li class="etiqueta-tecnologia">Git</li>
+                                    <li class="etiqueta-tecnologia">GitHub</li>
+                                    <li class="etiqueta-tecnologia">ARIA</li>
+                                </ul>
+                            </section>
+
+                            <div class="acciones-proyecto">
+                                <a href="https://github.com/Zeth-DG/sketch-and-coffee" target="_blank"
+                                    rel="noopener noreferrer" class="boton boton-tarjeta-principal"
+                                    aria-label="Ver demo de Landing Page de Promociones interactiva de Sketch and Coffee CDMX (se abre en una nueva pestaña)">
+                                    Ver Demo
+                                </a>
+                                <a href="https://github.com/Zeth-DG/sketch-and-coffee" target="_blank"
+                                    rel="noopener noreferrer" class="boton boton-tarjeta-secundaria"
+                                    aria-label="Ver código fuente en GitHub de la Landing Page de Sketch and Coffee (se abre en una nueva pestaña)">
+                                    Código en GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Aqui se agregaran Proyectos futuros :D-->
                 </div>
             </div>
         </section>
 
-    </main>
+ <!------------------------------------------------------------------------------------------------------------------------->
+         <!-- Sección de Certificaciones y Formación Académica -->
+        <section id="seccion-certificaciones" class="seccion-certificaciones" aria-labelledby="titulo-certificaciones">
+            <div class="contenedor">
+                <h2 id="titulo-certificaciones" class="titulo-seccion">Certificaciones y Formación Académica</h2>
 
+                <div class="grilla-certificaciones">
+
+                    <!-- Certificación 1 -->
+                    <article class="tarjeta-certificacion">
+                        <div class="encabezado-certificacion">
+                            <span class="insignia-certificacion">Certificación</span>
+                            <span class="fecha-certificacion">Agosto - Noviembre 2026</span>
+                        </div>
+                        <h3 class="titulo-certificacion">Desarrollo Web Full Stack Java</h3>
+                        <p class="emisor-certificacion">Generation Mexico</p>
+                        <p class="descripcion-certificacion">
+                            Especialización intensiva en desarrollo Java, Spring Boot, MySQL, JavaScript, habilidades
+                            blandas, metodologia SCRUM y mejores
+                            prácticas de arquitectura limpia.
+                        </p>
+
+                    </article>
+
+                    <!-- Certificación 2 -->
+                    <article class="tarjeta-certificacion">
+                        <div class="encabezado-certificacion">
+                            <span class="insignia-certificacion">Certificación</span>
+                            <span class="fecha-certificacion">Agosto 2026</span>
+                        </div>
+                        <h3 class="titulo-certificacion">Introduccion a Java</h3>
+                        <p class="emisor-certificacion">Accenture</p>
+                        <p class="descripcion-certificacion">
+                            Curso introductorio del lenguaje de Programacion Java.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Certificación 3 -->
+                    <article class="tarjeta-certificacion">
+                        <div class="encabezado-certificacion">
+                            <span class="insignia-certificacion">Certificación</span>
+                            <span class="fecha-certificacion">Agosto 2026</span>
+                        </div>
+                        <h3 class="titulo-certificacion">Inteligencia Artificial y Machine Learning</h3>
+                        <p class="emisor-certificacion">Accenture</p>
+                        <p class="descripcion-certificacion">
+                            Curso sobre IA, Machine Learning, Deep Learning y Algoritmos.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Certificación 4 -->
+                    <article class="tarjeta-certificacion">
+                        <div class="encabezado-certificacion">
+                            <span class="insignia-certificacion">Certificación</span>
+                            <span class="fecha-certificacion">Septiembre 2026</span>
+                        </div>
+                        <h3 class="titulo-certificacion">Introduccion a la Ciberseguridad</h3>
+                        <p class="emisor-certificacion">Cisco Networking Academy</p>
+                        <p class="descripcion-certificacion">
+                            Curso Introducción a Ciberseguridad impartido por Cisco Networking Academy
+                        </p>
+
+                    </article>
+
+
+                    <!-- Certificación 5 -->
+                    <article class="tarjeta-certificacion">
+                        <div class="encabezado-certificacion">
+                            <span class="insignia-certificacion">Certificación</span>
+                            <span class="fecha-certificacion">Septiembre 2026</span>
+                        </div>
+                        <h3 class="titulo-certificacion">Contabilidad de gases de efecto invernadero para TI</h3>
+                        <p class="emisor-certificacion">Cisco Networking Academy</p>
+                        <p class="descripcion-certificacion">
+                            El curso GHG Accounting for the IT Sector de Cisco Networking Academy es una formación
+                            introductoria diseñada para enseñar cómo medir, gestionar y reportar la huella de carbono en
+                            la industria de las tecnologías de la información.
+                        </p>
+
+                    </article>
+
+                        <!--Aqui se agregaran certificacion futuras :)-->
+                </div>
+            </div>
+        </section>
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!-- Sección de Contacto Accesible -->
+    <section id="seccion-contacto" class="seccion-contacto" aria-labelledby="titulo-contacto">
+        <div class="contenedor">
+            <h2 id="titulo-contacto" class="titulo-seccion">Trabajemos Juntos</h2>
+            <p class="subtitulo-contacto">
+                ¿Tienes un proyecto en mente o buscas integrar la accesibilidad web en tu equipo? Envíame un mensaje
+                directo.
+            </p>
+
+            <!-- Región dinámica para anuncios de éxito / error -->
+            <div id="notificacion-formulario" class="notificacion-contacto" aria-live="assertive" role="alert"></div>
+
+            <form id="formulario-contacto" class="formulario-contacto" novalidate>
+                <div class="grupo-formulario">
+                    <label for="campo-nombre" class="etiqueta-formulario">
+                        Nombre completo <span class="requerido" aria-hidden="true">*</span>
+                    </label>
+                    <input type="text" id="campo-nombre" name="nombre" class="entrada-formulario" required
+                        aria-required="true" aria-describedby="error-nombre">
+                    <span id="error-nombre" class="mensaje-error" aria-live="polite"></span>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="campo-email" class="etiqueta-formulario">
+                        Correo electrónico <span class="requerido" aria-hidden="true">*</span>
+                    </label>
+                    <input type="email" id="campo-email" name="email" class="entrada-formulario" required
+                        aria-required="true" aria-describedby="error-email">
+                    <span id="error-email" class="mensaje-error" aria-live="polite"></span>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="campo-mensaje" class="etiqueta-formulario">
+                        Mensaje <span class="requerido" aria-hidden="true">*</span>
+                    </label>
+                    <textarea id="campo-mensaje" name="mensaje" rows="5" class="entrada-formulario" required
+                        aria-required="true" aria-describedby="error-mensaje"></textarea>
+                    <span id="error-mensaje" class="mensaje-error" aria-live="polite"></span>
+                </div>
+
+                <button type="submit" class="boton boton-principal boton-enviar-formulario">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+    <!------------------------------------------------------------------------------------------------------>
     <!--pie de página -->
     <footer class="pie-pagina" role="contentinfo">
         <div class="contenedor contenido-pie">
@@ -293,8 +563,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/manuel-rodriguez-gonzalez-dev/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Ir al perfil de LinkedIn (se abre en una nueva pestaña)">
+                    <a href="https://www.linkedin.com/in/manuel-rodriguez-gonzalez-dev/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Ir al perfil de LinkedIn (se abre en una nueva pestaña)">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path
                                 d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
